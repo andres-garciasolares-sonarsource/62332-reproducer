@@ -13,11 +13,7 @@ public class MyServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) {
     try {
-      try (InputStream in = InputStream.nullInputStream()) {
-
-      }
-
-      throw new Exception(); // Sonar raises S1989 (https://rules.sonarsource.com/java/RSPEC-1989/)
+      throw new Exception(); // Sonar does NOT raise S1989 (https://rules.sonarsource.com/java/RSPEC-1989/)
 
     } catch (Exception e) {
 
