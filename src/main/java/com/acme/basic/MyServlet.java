@@ -13,7 +13,9 @@ public class MyServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) {
     try {
-      try (InputStream in = InputStream.nullInputStream()) {
+      try {
+
+      } catch (Exception e) {
 
       }
 
